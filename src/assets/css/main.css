@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+article, aside, details, summary, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, s, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {border: 0 none;margin: 0;outline: 0 none;padding: 0;}
+* {word-break: break-all;}
+body, html {color:#444; font:14px/1.5 arial,"微软雅黑","Microsoft Yahei","Hiragino Sans GB",sans-seri; _background-image:url(about:blank); _background-attachment:fixed;/** 防止 ie6 抖动 **/}
+input { margin: 0;padding: 0;vertical-align:middle;font-size:14px; font-family:"微软雅黑","Microsoft Yahei","Hiragino Sans GB",sans-seri; outline:none;}
+textarea{font-family:"微软雅黑","Microsoft YaHei",Arial;font-size:14px; outline:none;}
+select{cursor: pointer; vertical-align: middle; font-family:"微软雅黑","Microsoft YaHei",Arial; padding:0; margin:0; outline:none;}
+option{ padding:0; margin:0; outline:none;}
+li {list-style-type: none;}
+img {text-align: center; vertical-align: middle;}
+address, cite, dfn, em, var { font-style: normal;}
+a { text-decoration: none; color:#444; cursor:pointer; transition: all 0.4s; -webkit-transition:all 0.4s; -moz-transition: all 0.4s;}
+a:hover { text-decoration: underline;color:#f30;}
+img{border:0px;}
+.clear{ clear: both; padding: 0; margin: 0; line-height: 0;}
