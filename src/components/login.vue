@@ -1,6 +1,7 @@
 <template>
-    <div class="login">
+    <div class="login posA allBox">
         <h3>{{mingcheng}}</h3>
+
     </div>
 </template>
 
