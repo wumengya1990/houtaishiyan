@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import top from '@/components/top'
-import login from '@/components/login'
+import documentMain from '@/components/documentMain'
+import outbox from '@/components/outbox'
+import inbox from '@/components/inbox'
+import drafts from '@/components/drafts'
 
 Vue.use(Router)
 
@@ -12,17 +13,55 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      component:resolve => require(['@/components/HelloWorld'],resolve)
     },
     {
       path: '/top',
       name: 'top',
-      component: top
+      component:resolve => require(['@/components/top'],resolve)
     },
     {
       path: '/login',
       name: 'login',
-      component: login
+      component:resolve => require(['@/components/login'],resolve)
+    },
+    {
+      path: '/mainPage',
+      name: 'mainPage',
+      component:resolve => require(['@/components/mainPage'],resolve),
+      children:[
+        {
+          path: '/documentMain',
+          name: 'documentMain',
+          component: documentMain,
+          children:[
+            {
+              path:'outbox',
+              name: 'outbox',
+              component: outbox,
+              meta:{
+                name:'发件箱',
+                auth:false
+              }
+            },
+            {
+              path:'inbox',
+              name: 'inbox',
+              component: inbox,
+              meta:{
+                name:'收件箱'
+              }
+            },
+            {
+              path:'drafts',
+              name: 'drafts',
+              component: drafts
+            }
+          ]
+        }
+      ]
     }
+    
+    
   ]
 })

@@ -2,9 +2,9 @@
     <div class="top">
         <div class="logo">{{login}}</div>
         <nav>
-            <router-link>栏目一</router-link>
-            <router-link>栏目二</router-link>
-            <router-link>栏目三</router-link>
+           <router-link to="/documentMain">公文</router-link>
+           <a>邮件内容</a>
+           <a>配置内容</a>
         </nav>
     </div>
 </template>

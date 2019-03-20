@@ -1,0 +1,15 @@
+<template>
+    <div class="inbox">
+
+    </div>
+</template>
+
+<script>
+export default {
+    name:'inbox'
+}
+</script>
+
+<style>
+
+</style>

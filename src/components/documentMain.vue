@@ -1,17 +1,10 @@
 <template>
-    <div class="mainPage">
-        <top></top>
-        <router-view></router-view>
-    </div>
+    <div class="documentMain"></div>
 </template>
 
 <script>
-import top from '@/components/top'
 export default {
-    name:'mainPage',
-    components:{
-        top
-    },
+    name:'documentMain',
     data() {
         return {
             
@@ -22,7 +15,7 @@ export default {
     },
     methods: {
         
-    }
+    },
 }
 </script>
 
