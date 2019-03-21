@@ -24,5 +24,15 @@ img{border:0px;}
 .login h3{ text-align: center; font-size: 18px; color: #FFF;}
 .loginNew{background: #FFF;}
 
-.top{ height:60px; background: rgba(0,0,0,.6)}
-.top .logo{ color: #FFF; float: left; height: 60px; font-size:24px; line-height: 60px; padding: 0 20px; font-weight: bold;}
+.top{ height:50px; background: rgba(0,0,0,.6)}
+.top .logo{ color: #FFF; float: left; height: 50px; font-size:24px; line-height: 50px; font-weight: bold; width: 150px; text-align: center;}
+.top nav{ overflow: hidden;}
+.top nav a{  color: #FFF; height: 50px; line-height: 50px; font-size: 15px; padding: 0 40px; float: left;}
+.top nav a:hover{ text-decoration: none; background: rgba(255,255,255,.1)}
+.top nav a.on{ color: #ffca00; background: rgba(255,255,255,.1); font-weight: bold;}
+
+.bottomBox{ top: 50px;}
+.leftBox{ right:auto; width: 150px; background:rgba(0,0,0,.1)}
+.leftBox a{ display: block; height: 40px; line-height: 40px; text-align: center; border-bottom: 1px solid #d3d3d4;}
+.leftBox a.on{ background: #565656; color: #FFF;}
+.rightBox{ left: 150px;}

@@ -1,12 +1,12 @@
 <template>
-    <div class="outbox">
-
+    <div class="drafts">
+        邮件草稿箱
     </div>
 </template>
 
 <script>
 export default {
-    name:'outbox'
+    name:'drafts'
 }
 </script>
 

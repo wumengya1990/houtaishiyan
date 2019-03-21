@@ -1,12 +1,12 @@
 <template>
-    <div class="drafts">
-
+    <div class="inbox">
+        公文收件箱
     </div>
 </template>
 
 <script>
 export default {
-    name:'drafts'
+    name:'inbox'
 }
 </script>
 

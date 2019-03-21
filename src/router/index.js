@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import documentMain from '@/components/documentMain'
-import outbox from '@/components/outbox'
-import inbox from '@/components/inbox'
-import drafts from '@/components/drafts'
 
 Vue.use(Router)
 
@@ -33,21 +29,21 @@ export default new Router({
         {
           path: '/documentMain',
           name: 'documentMain',
-          component: documentMain,
+          redirect: '/documentMain/inbox',
+          component:resolve => require(['@/components/documentNR/documentMain'],resolve),
           children:[
             {
               path:'outbox',
               name: 'outbox',
-              component: outbox,
+              component:resolve => require(['@/components/documentNR/outbox'],resolve),
               meta:{
-                name:'发件箱',
-                auth:false
+                name:'发件箱'
               }
             },
             {
               path:'inbox',
               name: 'inbox',
-              component: inbox,
+              component:resolve => require(['@/components/documentNR/inbox'],resolve),
               meta:{
                 name:'收件箱'
               }
@@ -55,7 +51,36 @@ export default new Router({
             {
               path:'drafts',
               name: 'drafts',
-              component: drafts
+              component:resolve => require(['@/components/documentNR/drafts'],resolve)
+            }
+          ]
+        },
+        {
+          path: '/emailMain',
+          name: 'emailMain',
+          redirect: '/emailMain/inboxe',
+          component:resolve => require(['@/components/emailNR/emailMain'],resolve),
+          children:[
+            {
+              path:'outboxe',
+              name: 'outboxe',
+              component:resolve => require(['@/components/emailNR/outbox'],resolve),
+              meta:{
+                name:'发件箱'
+              }
+            },
+            {
+              path:'inboxe',
+              name: 'inboxe',
+              component:resolve => require(['@/components/emailNR/inbox'],resolve),
+              meta:{
+                name:'收件箱'
+              }
+            },
+            {
+              path:'draftse',
+              name: 'draftse',
+              component:resolve => require(['@/components/emailNR/drafts'],resolve)
             }
           ]
         }
