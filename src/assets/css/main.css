@@ -21,8 +21,9 @@ img{border:0px;}
 .allBox{ left: 0; top: 0; right:0 ; bottom: 0; margin: auto;}
 
 .login{ background:rgba(0,0,0,.6)}
-.login h3{ text-align: center; font-size: 18px; color: #FFF;}
+.login h3{ text-align: center; font-size: 26px; color: #666; height: 60px; line-height: 60px; margin: 0 0 20px;}
 .loginNew{background: #FFF;}
+.loginBox{ background: #FFF; width: 400px; height: 380px; padding: 20px}
 
 .top{ height:50px; background: rgba(0,0,0,.6)}
 .top .logo{ color: #FFF; float: left; height: 50px; font-size:24px; line-height: 50px; font-weight: bold; width: 150px; text-align: center;}
@@ -36,3 +37,5 @@ img{border:0px;}
 .leftBox a{ display: block; height: 40px; line-height: 40px; text-align: center; border-bottom: 1px solid #d3d3d4;}
 .leftBox a.on{ background: #565656; color: #FFF;}
 .rightBox{ left: 150px;}
+
+

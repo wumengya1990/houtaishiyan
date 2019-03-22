@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-export default new Router({
+
+const router =  new Router({
   mode:'history',
   routes: [
     {
@@ -30,6 +31,9 @@ export default new Router({
           path: '/documentMain',
           name: 'documentMain',
           redirect: '/documentMain/inbox',
+          meta:{
+            requireAuth:false
+          },
           component:resolve => require(['@/components/documentNR/documentMain'],resolve),
           children:[
             {
@@ -90,3 +94,17 @@ export default new Router({
     
   ]
 })
+
+// router.beforeEach((to,form,next)=>{
+//   if(to.meta.requireAuth){
+//     if(store.state.userToken){
+//       next()
+//     }else{
+//       next({
+//         path:'/login'
+//       })
+//     }
+//   }
+// })
+
+export default router;
