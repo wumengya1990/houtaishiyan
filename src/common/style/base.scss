@@ -14,38 +14,36 @@ a:hover { text-decoration: underline;color:#f30;}
 img{border:0px;}
 .clear{ clear: both; padding: 0; margin: 0; line-height: 0;}
 
+$color_white:#FFF;
 
 .posR{ position: relative;}
 .posA{ position: absolute;}
 .allBox{ left: 0; top: 0; right:0 ; bottom: 0; margin: auto;}
 
-.login{ background:rgba(0,0,0,.6)}
-.login h3{ text-align: center; font-size: 26px; color: #666; height: 60px; line-height: 60px; margin: 0 0 20px;}
-.loginNew{background: #FFF;}
-.loginBox{ background: #FFF; width: 400px; height: 380px; padding: 20px; border-radius: 5px;  box-shadow:0 3px 5px #4c4c4c;}
+.login{ 
+    background:rgba(0,0,0,.6);
+    h3{ text-align: center; font-size: 26px; color: #666; height: 60px; line-height: 60px; margin: 0 0 20px;}
+}
+.loginNew{background: $color_white;}
+.loginBox{ background: $color_white; width: 400px; height: 380px; padding: 20px; border-radius: 5px;  box-shadow:0 3px 5px #4c4c4c;}
 
 
 
-.top{ height:50px; background: rgba(0,0,0,.6)}
-.top .logo{ color: #FFF; float: left; height: 50px; font-size:24px; line-height: 50px; font-weight: bold; width: 150px; text-align: center;}
-.top nav{ overflow: hidden;}
-.top nav a{  color: #FFF; height: 50px; line-height: 50px; font-size: 15px; padding: 0 40px; float: left;}
-.top nav a:hover{ text-decoration: none; background: rgba(255,255,255,.1)}
-.top nav a.on{ color: #ffca00; background: rgba(255,255,255,.1); font-weight: bold;}
-
-// .top{
-//     height:50px; background: rgba(0,0,0,.6);
-//     .logo{color: #FFF; float: left; height: 50px; font-size:24px; line-height: 50px; font-weight: bold; width: 150px; text-align: center;}
-//     .nav{
-//         overflow: hidden;
-//         a{ color: #FFF; height: 50px; line-height: 50px; font-size: 15px; padding: 0 40px; float: left;}
-//         a:hover{text-decoration: none; background: rgba(255,255,255,.1)}
-//         a.on{ color: #ffca00; background: rgba(255,255,255,.1); font-weight: bold;}
-//     }
-// }
+.top{
+    height:50px; background: rgba(0,0,0,.6);
+    .logo{color: $color_white; float: left; height: 50px; font-size:24px; line-height: 50px; font-weight: bold; width: 150px; text-align: center;}
+    nav{
+        overflow: hidden;
+        a{ color: $color_white; height: 50px; line-height: 50px; font-size: 15px; padding: 0 40px; float: left;}
+        a:hover{text-decoration: none; background: rgba(255,255,255,.1)}
+        a.on{ color: #ffca00; background: rgba(255,255,255,.1); font-weight: bold;}
+    }
+}
 
 .bottomBox{ top: 50px;}
-.leftBox{ right:auto; width: 150px; background:rgba(0,0,0,.1)}
-.leftBox a{ display: block; height: 40px; line-height: 40px; text-align: center; border-bottom: 1px solid #d3d3d4;}
-.leftBox a.on{ background: #565656; color: #FFF;}
+.leftBox{ 
+    right:auto; width: 150px; background:rgba(0,0,0,.1);
+    a{display: block; height: 40px; line-height: 40px; text-align: center; border-bottom: 1px solid #d3d3d4;}
+    a.on{background: #565656; color: #FFF;}
+}
 .rightBox{ left: 150px;}
