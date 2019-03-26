@@ -8,7 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 import store from './vuex/store'
 import { prototype } from 'node-notifier/notifiers/toaster';
-require('./assets/css/main.css')
+// require('./assets/css/main.css')
+// import('./assets/sass/main.scss')
 
 Vue.use(ElementUI);
 

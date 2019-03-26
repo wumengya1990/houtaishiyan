@@ -51,6 +51,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .el-form-item__label{ line-height: 30px;}
 </style>
